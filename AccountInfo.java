@@ -8,23 +8,13 @@
  
  public class AccountInfo
  {
+ 	private String code;
 	private String password;
-	private String code;
  
-	public AccountInfo (String password, String code)
+	public AccountInfo (String code, String password)
 	{
-		setPassword(password);
 		setCode(code);
-	}
-	
-	public String getPassword ()
-	{
-		return this.password;
-	}
-	
-	public void setPassword (String password)
-	{
-		this.password = password;
+		setPassword(password);
 	}
 	
 	public String getCode()
@@ -35,5 +25,15 @@
 	public void setCode (String code)
 	{
 		this.code = code;
+	}
+	
+	public String getPassword ()
+	{
+		return this.password;
+	}
+	
+	public void setPassword (String password)
+	{
+		this.password = password;
 	}
  }
