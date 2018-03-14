@@ -1,3 +1,11 @@
+/*
+ * Primary class for my "password generator" program
+ *
+ * Created by Brent Crane
+ * March 13th, 2018
+ *
+ */
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -8,7 +16,6 @@ public class PasswordGenerator
 	private static ArrayList <AccountInfo> accountList;
 	private static Scanner input;
 
-	/** Main method */
 	public static void main (String [] args)
 	{
 		int passwordCount;
@@ -16,7 +23,7 @@ public class PasswordGenerator
 		String accountPassword;
 	
 		accountList = new ArrayList<>();
-		validCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+		validCharacters = "abcdefghijklmnopqrstuvwxyz0123456789";
 		length = 0;
 		input = new Scanner (System.in);
 		

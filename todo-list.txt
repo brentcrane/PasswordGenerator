@@ -7,7 +7,10 @@ The tasks are not in any particular order.
 	c. Check-box for "0-9" characters
 	d. Text-box for any other characters
 	e. "Generate" button
-	f. Text field containing new password
+	f. "Add Entry" button
+	g. "Show Entries" button
+	h. Text field containing new password
+	
 2. Output generated passwords to text file
 3. Have button that removes the generated text file
 4. Have option to output to new pop-up text-box window
