@@ -6,15 +6,33 @@
  *
  */
  
+ import java.util.Random;
+ 
  public class AccountInfo
  {
+	private static Random random = new Random();
+ 
  	private String code;
 	private String password;
  
-	public AccountInfo (String code, String password)
+	public AccountInfo (String code, String characters, int length)
 	{
 		setCode(code);
-		setPassword(password);
+		setPassword(generatePassword(characters, length));
+	}
+	
+	/** Generate and return a random password according to the static values */
+	private static String generatePassword (String validCharacters, int length)
+	{
+		String password = "";
+		
+		for (int i = 0; i < length; i++)
+		{
+			char character = validCharacters.charAt(random.nextInt(validCharacters.length()));
+			password += (""+character);
+		}
+		
+		return password;
 	}
 	
 	public String getCode()
