@@ -1,0 +1,13 @@
+To-do list for my password generator program.
+The tasks are not in any particular order.
+
+1. Add a GUI with Swing
+	a. Check-box for "a-z" characters
+	b. Check-box for "A-Z" characters
+	c. Check-box for "0-9" characters
+	d. Text-box for any other characters
+	e. "Generate" button
+	f. Text field containing new password
+2. Output generated passwords to text file
+3. Have button that removes the generated text file
+4. Have option to output to new pop-up text-box window
