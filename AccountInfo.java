@@ -2,39 +2,22 @@
  * This class defines the AccountInfo object.
  *
  * Each object of this type will store the information for
- * a specific account.
+ * a specific account. Currently a little unnecessary, I think.
  *
  */
  
- import java.util.Random;
- 
  public class AccountInfo
  {
-	private static Random random = new Random();
- 
  	private String code;
 	private String password;
  
-	public AccountInfo (String code, String characters, int length)
+	public AccountInfo (String cd, String pass)
 	{
-		setCode(code);
-		setPassword(generatePassword(characters, length));
+		setCode(cd);
+		setPassword(pass);
 	}
 	
-	/** Generate and return a random password according to the static values */
-	private static String generatePassword (String validCharacters, int length)
-	{
-		String password = "";
-		
-		for (int i = 0; i < length; i++)
-		{
-			char character = validCharacters.charAt(random.nextInt(validCharacters.length()));
-			password += (""+character);
-		}
-		
-		return password;
-	}
-	
+	// Getters and setters for the account object
 	public String getCode()
 	{
 		return this.code;
